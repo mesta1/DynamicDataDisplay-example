@@ -1,0 +1,21 @@
+﻿<ListView x:Class="Microsoft.Research.DynamicDataDisplay.Charts.ViewportListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:Microsoft.Research.DynamicDataDisplay.Charts"
+	Background="Transparent">
+    <ListView.Style>
+        <Style/>
+    </ListView.Style>
+    
+    <ListView.Template>
+        <ControlTemplate>
+            <ItemsPresenter/>
+        </ControlTemplate>
+    </ListView.Template>
+
+    <ListView.ItemsPanel>
+        <ItemsPanelTemplate>
+            <local:ViewportPanel/>
+        </ItemsPanelTemplate>
+    </ListView.ItemsPanel>
+</ListView>
